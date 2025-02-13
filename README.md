@@ -1,6 +1,6 @@
 # GoWay
 
-Projeto de Roro. Blog de turismo
+Projeto de Design Web. Blog de turismo
 
 ## Colaboradoras
 
