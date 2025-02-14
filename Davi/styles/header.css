@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #49808C;
+    --cor2: #94F2E1;
+    --cor3: #81A649;
+    --cor4: #F2E1C2;
+    --cor5: #F27830;
+}
+
+header {
+    position: sticky;
+    top: -1px;
+    height: 100px;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 2rem;
+}
+
+/* Temporário */
+header > #logo {
+    height: 80%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: blue;
+}
+
+header .menu {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 1.6rem;
+}
+
+header .menu a {
+    font: normal 1.2rem Arial;
+    text-decoration: none;
+    color: white;
+}
+
+header .menu a:is(:hover, .marcado) {
+    color: green;
+}
