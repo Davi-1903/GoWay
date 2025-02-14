@@ -4,6 +4,7 @@
     --cor3: #81A649;
     --cor4: #F2E1C2;
     --cor5: #F27830;
+    --shadow: #30304080;
 }
 
 .carousel {
@@ -53,8 +54,8 @@
 
 .card > button {
     margin: 1rem 0 0 5rem;
-    padding: .5rem 4rem;
-    font: bold 1.2rem Arial;
+    padding: .5rem 3rem;
+    font: bold 1.4rem Arial;
     color: white;
     border-radius: 2rem;
     border: 2px solid white;
