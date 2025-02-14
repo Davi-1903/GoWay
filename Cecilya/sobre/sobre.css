@@ -1,0 +1,60 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+
+
+#imagem{
+    height: 360px;
+    background-image: url(agencia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+h1 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+}
+#imagem > p{
+    color: white;
+}
+button {
+    padding: 10px 40px;
+    border-radius: 20px;
+    border: 0;
+    margin-right: 15px;
+}
+button:focus, button:hover{
+    background-color: black;
+    color: white;
+}
+
+
+#textsobre {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#textsobre > p{
+    text-align: justify;
+}
+[src*='logo'] {
+    height: 400px;
+    float: right;
+    border-radius: 6px;
+    margin-left: 10px;
+    margin-bottom: 4px;
+}
