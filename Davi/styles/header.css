@@ -8,6 +8,13 @@
     --cor5: #F27830;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 header {
     position: sticky;
     top: -1px;

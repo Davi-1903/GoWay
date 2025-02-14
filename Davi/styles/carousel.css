@@ -1,0 +1,94 @@
+:root {
+    --cor1: #49808C;
+    --cor2: #94F2E1;
+    --cor3: #81A649;
+    --cor4: #F2E1C2;
+    --cor5: #F27830;
+}
+
+.carousel {
+    position: relative;
+    height: 60vh;
+    overflow-x: hidden;
+}
+
+.carousel-container {
+    height: 100%;
+    display: flex;
+    transition: all 500ms;
+}
+
+.carousel > button {
+    z-index: 1;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font: bold 3rem Arial;
+    background-color: transparent;
+    color: #ffffff80;
+    padding: .5rem;
+}
+
+.carousel > #previous {
+    left: 1rem;
+}
+
+.carousel > #next {
+    right: 1rem;
+}
+
+.carousel-container > .card {
+    flex: 1 0 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card > h2 {
+    margin: 15rem 0 0 5rem;
+    font: bold 4.6rem Arial;
+    color: white;
+}
+
+.card > button {
+    margin: 1rem 0 0 5rem;
+    padding: .5rem 4rem;
+    font: bold 1.2rem Arial;
+    color: white;
+    border-radius: 2rem;
+    border: 2px solid white;
+    background-color: transparent;
+    transition: all 250ms;
+}
+
+.card > button:hover {
+    background-color: var(--cor5);
+    border-color: var(--cor5);
+    transform: scale(1.05);
+}
+
+.card > button:active {
+    transform: none;
+}
+
+/* Vou pensar numa forma melhor */
+.card:nth-child(1) {
+    background-image: linear-gradient(to right, #000000b0, transparent), url('../media/carousel/Brasil.jpg');
+}
+
+.card:nth-child(2) {
+    background-image: linear-gradient(to right, #000000b0, transparent), url('../media/carousel/Egito.jpg');
+}
+
+.card:nth-child(3) {
+    background-image: linear-gradient(to right, #000000b0, transparent), url('../media/carousel/Suíça.jpg');
+}
+
+.card:nth-child(4) {
+    background-image: linear-gradient(to right, #000000b0, transparent), url('../media/carousel/Austrália.jpg');
+}
+
+.card:nth-child(5) {
+    background-image: linear-gradient(to right, #000000b0, transparent), url('../media/carousel/Coreia.jpg');
+}
