@@ -20,7 +20,7 @@ const previousBtn = document.querySelector('#previous');
 const nextBtn = document.querySelector('#next');
 
 let scrolled = 0;
-const intervalTime = 5000;
+const intervalTime = 10000;
 const scrollStep = 100 / carousel.children.length;
 const limit = scrollStep * (carousel.children.length - 1);
 carousel.style.width = `${100 * carousel.children.length}%`;
