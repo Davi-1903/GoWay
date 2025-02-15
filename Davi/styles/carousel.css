@@ -46,15 +46,14 @@
 }
 
 .card > .text {
-    margin-left: 2rem;
+    margin-left: 8rem;
     padding-inline: 1rem;
-    height: 23rem;
+    height: 30rem;
     width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .card h2 {
@@ -62,7 +61,13 @@
     color: white;
 }
 
+.card p {
+    font: normal 1.2rem Arial;
+    color: white;
+}
+
 .card button {
+    align-self: start;
     padding: .5rem 3rem;
     font: bold 1.4rem Arial;
     color: white;
@@ -84,21 +89,21 @@
 
 /* Vou pensar numa forma melhor */
 .card:nth-child(1) {
-    background-image: linear-gradient(to right, #000000b0, transparent), url('../media/carousel/Brasil.jpg');
+    background-image: linear-gradient(to right, #000000d0, transparent), url('../media/carousel/Brasil.jpg');
 }
 
 .card:nth-child(2) {
-    background-image: linear-gradient(to right, #000000b0, transparent), url('../media/carousel/Egito.jpg');
+    background-image: linear-gradient(to right, #000000d0, transparent), url('../media/carousel/Egito.jpg');
 }
 
 .card:nth-child(3) {
-    background-image: linear-gradient(to right, #000000b0, transparent), url('../media/carousel/Suíça.jpg');
+    background-image: linear-gradient(to right, #000000d0, transparent), url('../media/carousel/Suíça.jpg');
 }
 
 .card:nth-child(4) {
-    background-image: linear-gradient(to right, #000000b0, transparent), url('../media/carousel/Austrália.jpg');
+    background-image: linear-gradient(to right, #000000d0, transparent), url('../media/carousel/Austrália.jpg');
 }
 
 .card:nth-child(5) {
-    background-image: linear-gradient(to right, #000000b0, transparent), url('../media/carousel/Coreia.jpg');
+    background-image: linear-gradient(to right, #000000d0, transparent), url('../media/carousel/Coreia.jpg');
 }
