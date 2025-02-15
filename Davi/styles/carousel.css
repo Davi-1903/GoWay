@@ -5,6 +5,7 @@
     --cor4: #F2E1C2;
     --cor5: #F27830;
     --shadow: #30304080;
+    --font: 'Montserrat', sans-serif;
 }
 
 .carousel {
@@ -24,7 +25,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font: bold 3rem Arial;
+    font: bold 3rem var(--font);
     background-color: transparent;
     color: #ffffff80;
     padding: .5rem;
@@ -56,12 +57,12 @@
 }
 
 .card h2 {
-    font: bold 4.6rem Arial;
+    font: bold 4.6rem var(--font);
     color: white;
 }
 
 .card p {
-    font: normal 1.2rem Arial;
+    font: normal 1.2rem var(--font);
     color: white;
 }
 
@@ -69,7 +70,7 @@
     margin-top: 2rem;
     align-self: start;
     padding: .5rem 4rem;
-    font: bold 1.8rem Arial;
+    font: bold 1.8rem var(--font);
     color: white;
     border-radius: 2rem;
     border: 2px solid white;
