@@ -6,6 +6,7 @@
     --cor3: #81A649;
     --cor4: #F2E1C2;
     --cor5: #F27830;
+    --shadow: #30304080;
 }
 
 * {
@@ -19,11 +20,12 @@ header {
     position: sticky;
     top: -1px;
     height: 100px;
-    background-color: orange;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-inline: 2rem;
+    box-shadow: .5rem 0 2rem var(--shadow);
 }
 
 /* Temporário */
@@ -31,7 +33,7 @@ header > #logo {
     height: 80%;
     aspect-ratio: 1;
     border-radius: 50%;
-    background-color: blue;
+    background-color: var(--cor1);
 }
 
 header .menu {
@@ -42,11 +44,31 @@ header .menu {
 }
 
 header .menu a {
-    font: normal 1.2rem Arial;
+    position: relative;
+    font: bold 1.2rem Arial;
     text-decoration: none;
-    color: white;
+    color: var(--cor1);
+    transition: all 125ms;
+}
+
+header .menu a::before {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: var(--cor5);
+    border-radius: 1rem;
+    transition: all 125ms;
 }
 
 header .menu a:is(:hover, .marcado) {
-    color: green;
+    color: var(--cor5);
+
+    &::before {
+        left: 0;
+        width: 50%;
+    }
 }
