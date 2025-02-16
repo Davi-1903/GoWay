@@ -108,3 +108,27 @@
 .carousel-container > .card:nth-child(5) {
     background-image: linear-gradient(to right, #000000d0, transparent), url('../media/carousel/Coreia.jpg');
 }
+
+@media screen and (width < 700px) {
+    .carousel > #previous, #next {
+        display: none;
+    }
+
+    .carousel-container > .card > .text {
+        width: 80%;
+    }
+
+    .carousel-container > .card h2 {
+        font-size: 3.2rem;
+    }
+
+    .carousel-container > .card p {
+        font-size: 1rem;
+    }
+
+    .carousel-container > .card button {
+        margin-top: 1rem;
+        padding: .5rem 3rem;
+        font-size: 1.6rem;
+    }
+}
