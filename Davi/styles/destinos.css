@@ -67,7 +67,7 @@
 }
 
 .destinos-container .card:hover > img {
-    filter:brightness(0.4);
+    filter: brightness(0.4);
 }
 
 .destinos-container .card:hover > .text {
@@ -79,9 +79,17 @@
         flex-direction: column;
     }
 
+    .destinos:nth-child(odd) {
+        flex-direction: column;
+    }
+
     .destinos > h2 {
         text-align: center;
-        border-right: 0;
+        border: 0;
+    }
+
+    .destinos:nth-child(odd) > h2 {
+        border: 0;
     }
 
     .destinos > .destinos-container {
