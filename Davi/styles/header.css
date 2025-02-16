@@ -41,14 +41,14 @@ header > a #logo {
     height: 100%;
 }
 
-header .menu {
+header nav > .menu {
     padding: 0;
     list-style-type: none;
     display: flex;
     gap: 1.6rem;
 }
 
-header .menu a {
+header nav > .menu a {
     position: relative;
     font: bold 1.15rem var(--font);
     text-decoration: none;
@@ -56,7 +56,7 @@ header .menu a {
     transition: all 125ms;
 }
 
-header .menu a::before {
+header nav > .menu a::before {
     z-index: -1;
     content: '';
     position: absolute;
@@ -69,11 +69,94 @@ header .menu a::before {
     transition: all 125ms;
 }
 
-header .menu a:is(:hover, .marcado) {
+header nav > .menu a:is(:hover, .marcado) {
     color: var(--cor5);
 
     &::before {
         left: 0;
         width: 50%;
+    }
+}
+
+header nav > .btn-menu-container {
+    display: none;
+    box-sizing: content-box;
+    height: 2.5rem;
+    padding: .5rem;
+    border-radius: .5rem .5rem 0 0;
+    background-color: var(--cor1);
+}
+
+header nav > .btn-menu-container #btn-menu-close {
+    box-sizing: content-box;
+    stroke: white;
+    padding: .25rem;
+    border-radius: .25rem;
+    transition: all 125ms;
+}
+
+header nav > .btn-menu-container #btn-menu-close:hover {
+    background-color: var(--cor5);
+}
+
+header #btn-menu-open {
+    cursor: pointer;
+    display: none;
+    box-sizing: content-box;
+    padding: .25rem;
+    border-radius: .25rem;
+    transition: all 125ms;
+    stroke: var(--cor1);
+}
+
+header #btn-menu-open:hover {
+    background-color: #49808C30;
+}
+
+@media screen and (width < 700px) {
+    header > a {
+        height: 30%;
+    }
+
+    header #btn-menu-open {
+        display: inline;
+    }
+
+    header nav {
+        position: fixed;
+        top: 1rem;
+        right: -60%;
+        border-radius: .5rem;
+        height: calc(100vh - 2rem);
+        width: min(60%, 20rem);
+        background-color: white;
+        transition: all 500ms ease-in-out;
+        box-shadow: .5rem .25rem 1rem var(--shadow);
+    }
+
+    header nav.open {
+        right: 1rem;
+    }
+
+    header nav > .btn-menu-container {
+        display: block;
+    }
+
+    header nav > .menu {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    header nav > .menu a {
+        display: block;
+        padding: 1rem;
+    }
+
+    header nav > .menu a:hover {
+        background-color: #49808C30;
+    }
+
+    header nav > .menu a:is(:hover, .marcado)::before {
+        width: 0;
     }
 }
