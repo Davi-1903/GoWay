@@ -33,12 +33,12 @@ header {
     box-shadow: .5rem 0 2rem var(--shadow);
 }
 
-/* Temporário */
-header > #logo {
-    height: 80%;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    background-color: var(--cor1);
+header > a {
+    height: 40%;
+}
+
+header > a #logo {
+    height: 100%;
 }
 
 header .menu {
