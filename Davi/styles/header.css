@@ -88,6 +88,8 @@ header nav > .btn-menu-container {
 }
 
 header nav > .btn-menu-container #btn-menu-close {
+    float: right;
+    cursor: pointer;
     box-sizing: content-box;
     stroke: white;
     padding: .25rem;
