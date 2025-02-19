@@ -65,8 +65,16 @@
 }
 
 @media screen and (width < 700px) {
+    .destinos {
+        padding-inline: 3rem;
+    }
+
     .destinos > h2 {
         font-size: 2.4rem;
+    }
+
+    .destinos-container > .card {
+        min-width: 16rem;
     }
 
     .destinos-container > .card .text {
