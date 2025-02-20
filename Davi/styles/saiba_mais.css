@@ -1,0 +1,77 @@
+:root {
+    --cor1: #49808C;
+    --cor2: #94F2E1;
+    --cor3: #81A649;
+    --cor4: #F2E1C2;
+    --cor5: #F27830;
+    --shadow: #30304080;
+    --font: 'Montserrat', sans-serif;
+}
+
+.sobre {
+    padding: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    background: linear-gradient(to right, #000000, #00000080), url('../media/sobre/Background.jpg') center center no-repeat fixed;
+    background-size: cover;
+}
+
+.sobre .text {
+    flex: 2 0 20rem;
+    font-size: 16px;
+}
+
+.sobre .button-container {
+    flex: 1 0 16rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre .text > h2 {
+    font: bold 3em var(--font);
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.sobre .text > p {
+    font: normal 1.2em/1.5 var(--font);
+    color: white
+}
+
+.sobre .button-container button {
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font: normal 1.6rem var(--font);
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 2rem;
+    transition: all 250ms;
+}
+
+.sobre .button-container button:hover {
+    background-color: var(--cor5);
+    border-color: var(--cor5);
+    transform: scale(1.05);
+}
+
+.sobre .button-container button:active {
+    transform: none;
+}
+
+@media screen and (width < 700px) {
+    .sobre .text {
+        flex-basis: 0;
+        font-size: 12px;
+    }
+
+    .sobre .text > p {
+        text-align: justify;
+    }
+
+    .sobre .button-container button {
+        font-size: 1.2rem;
+    }
+}
