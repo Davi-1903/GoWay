@@ -14,7 +14,7 @@ main{
 
 #imagem{
     height: 360px;
-    background-image: url(agencia.jpg);
+    background-image: url('../sobre/imagens/agencia.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -47,8 +47,8 @@ button:focus, button:hover{
 
 
 #textsobre {
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 #textsobre > p{
     text-align: justify;
@@ -60,10 +60,14 @@ button:focus, button:hover{
     color: #072D3A;
     font-size: 36px;
 }
-[src*='logo'] {
-    height: 400px;
+#textsobre > img {
+    height: 350px;
     float: right;
     border-radius: 6px;
-    margin-left: 10px;
+    margin-left: 15px;
     margin-bottom: 4px;
+    
+}
+@media screen and (max-width: 628px){
+    
 }
