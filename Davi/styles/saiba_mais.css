@@ -43,7 +43,7 @@
 .sobre .button-container button {
     padding: 1rem 2rem;
     cursor: pointer;
-    font: normal 1.6rem var(--font);
+    font: bold 1.6rem var(--font);
     color: white;
     background-color: transparent;
     border: 2px solid white;
