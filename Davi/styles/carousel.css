@@ -110,8 +110,14 @@
 }
 
 @media screen and (width < 700px) {
-    .carousel > #previous, #next {
-        display: none;
+    .carousel > #previous {
+        font-size: 1.5rem;
+        left: .5rem;
+    }
+    
+    .carousel > #next {
+        font-size: 1.5rem;
+        right: .5rem;
     }
 
     .carousel-container > .card > .text {
