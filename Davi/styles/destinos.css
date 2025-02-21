@@ -26,42 +26,34 @@
     gap: 3rem;
 }
 
-.destinos-container > .card {
+.destinos-container .card {
     position: relative;
     width: 20rem;
-    overflow-y: hidden;
 }
 
-.destinos-container > .card img {
+.destinos-container .card img {
     width: 100%;
     border-radius: 1rem;
     transition: all 250ms ease-in-out;
+    filter: brightness(0.4);
 }
 
-.destinos-container > .card .text {
+.destinos-container .card .text {
     position: absolute;
-    top: 100%;
+    bottom: 0;
     padding: 1.5rem;
     transition: all 250ms ease-in-out;
 }
 
-.destinos-container > .card .text h3 {
+.destinos-container .card .text h3 {
     font: bold 1.6rem var(--font);
     color: white;
     margin-bottom: .5rem;
 }
 
-.destinos-container > .card .text p {
+.destinos-container .card .text p {
     font: normal 1rem / 1.5 var(--font);
     color: white;
-}
-
-.destinos-container > .card:hover .text {
-    top: 0;
-}
-
-.destinos-container > .card:hover img {
-    filter: brightness(0.4);
 }
 
 @media screen and (width < 700px) {
