@@ -8,7 +8,7 @@
     --font: 'Montserrat', sans-serif;
 }
 
-.sobre {
+.secao-especial {
     padding: 4rem;
     display: flex;
     flex-wrap: wrap;
@@ -17,30 +17,35 @@
     background-size: cover;
 }
 
-.sobre .text {
+.secao-especial:nth-child(6n - 1) {
+    background: linear-gradient(to right, #000000, #00000080), url('../media/sobre/Background 2.jpg') center center no-repeat fixed;
+    background-size: cover;
+}
+
+.secao-especial .text {
     flex: 2 0 24rem;
     font-size: 16px;
 }
 
-.sobre .button-container {
+.secao-especial .button-container {
     flex: 1 0 12rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.sobre .text > h2 {
+.secao-especial .text > h2 {
     font: bold 3em var(--font);
     color: white;
     margin-bottom: 1rem;
 }
 
-.sobre .text > p {
+.secao-especial .text > p {
     font: normal 1.2em/1.5 var(--font);
     color: white
 }
 
-.sobre .button-container button {
+.secao-especial .button-container button {
     padding: 1rem 2rem;
     cursor: pointer;
     font: bold 1.6rem var(--font);
@@ -51,33 +56,33 @@
     transition: all 250ms;
 }
 
-.sobre .button-container button:hover {
+.secao-especial .button-container button:hover {
     background-color: var(--cor5);
     border-color: var(--cor5);
     transform: scale(1.05);
 }
 
-.sobre .button-container button:active {
+.secao-especial .button-container button:active {
     transform: none;
 }
 
 @media screen and (width < 700px) {
-    .sobre {
+    .secao-especial:nth-child(n) { /* Pequena gambiarra */
         background-attachment: scroll;
         flex-flow: column nowrap;
         gap: 0;
     }
 
-    .sobre .text {
+    .secao-especial .text {
         flex-basis: 0;
         font-size: 12px;
     }
 
-    .sobre .text > p {
+    .secao-especial .text > p {
         text-align: justify;
     }
 
-    .sobre .button-container button {
+    .secao-especial .button-container button {
         font-size: 1.2rem;
     }
 }
