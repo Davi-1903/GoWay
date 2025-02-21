@@ -1,0 +1,60 @@
+:root {
+    --cor1: #49808C;
+    --cor2: #94F2E1;
+    --cor3: #81A649;
+    --cor4: #F2E1C2;
+    --cor5: #F27830;
+    --shadow: #30304080;
+    --font: 'Montserrat', sans-serif;
+}
+
+footer {
+    padding: 2rem;
+    background-color: #05202C;
+}
+
+footer > hr {
+    height: 2px;
+    margin-block: 1rem;
+    background-color: white;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer > a > img {
+    width: min(20rem, 100%);
+    padding-right: 2rem;
+    border-right: 2px solid white;
+}
+
+footer .icons {
+    display: inline;
+    padding: 1rem;
+}
+
+footer .icons svg {
+    color: white;
+}
+
+footer .icons svg:hover {
+    color: var(--cor5);
+}
+
+footer > p {
+    text-align: center;
+    color: white;
+}
+
+@media screen and (width < 600px) {
+    footer a {
+        display: block;
+        text-align: center;
+    }
+
+    footer > a > img {
+        padding: 0;
+        border-right: none;
+    }
+}
