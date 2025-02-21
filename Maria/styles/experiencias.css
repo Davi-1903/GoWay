@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor1: #49808C;
+    --cor2: #94F2E1;
+    --cor3: #81A649;
+    --cor4: #F2E1C2;
+    --cor5: #F27830;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.destaques {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.destaques > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 285px;
+    height: 285px;
+}
+
+#neve {
+    background-image: url(../media/destaques/neve-destaque-285x282.jpg);
+    background-size: cover;
+}
+#natureza {
+    background-image: url(../media/destaques/natureza-destaque.jpg);
+    background-size: cover;
+}
+#montanha {
+    background-image: url(../media/destaques/Experiencias_Montanha-285x285.jpg);
+    background-size: cover;
+}
+#praia {
+    background-image: url(../media/destaques/Experiencias_Praia-285x285.jpg);
+    background-size: cover;
+}
+#feriado {
+    background-image: url(../media/destaques/reveillon-destaque.jpg);
+    background-size: cover;
+}
+#ferias {
+    background-image: url(../media/destaques/ferias-destaque.jpg);
+    background-size: cover;
+}
+#carnaval {
+    background-image: url(../media/destaques/carnaval-destaque.jpg);
+    background-size: cover;
+}
+#viagens {
+    background-image: url(../media/destaques/viagens-esportivas-destaque-285x285.jpg);
+    background-size: cover;
+}
+#familia {
+    background-image: url(../media/destaques/familia-destaque.jpg);
+    background-size: cover;
+}
+#reveillon {
+    background-image: url(../media/destaques/reveillon-destaque.jpg);
+    background-size: cover;
+}

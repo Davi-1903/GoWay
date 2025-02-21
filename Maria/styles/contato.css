@@ -25,7 +25,8 @@ main {
 .conteudo {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
+    padding: 20px;
 }
 
 form {
@@ -44,10 +45,10 @@ input, select, textarea {
 }
 
 .contatos {
-    background-color: #6ab9ca;
-    border-radius: 10px 0 0 10px;
+    background-color: var(--cor1);
+    border-radius: 10px;
     padding: 30px 20px;
-    width: 50%;
+    width: 40%;
     gap: 20px;
     display: flex;
     flex-direction: column;
