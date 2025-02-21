@@ -115,7 +115,7 @@ header #btn-menu-open:hover {
     background-color: #49808C30;
 }
 
-@media screen and (width < 700px) {
+@media screen and (width < 850px) {
     header > a {
         height: 30%;
     }
