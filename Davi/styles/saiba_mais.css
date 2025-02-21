@@ -18,12 +18,12 @@
 }
 
 .sobre .text {
-    flex: 2 0 20rem;
+    flex: 2 0 24rem;
     font-size: 16px;
 }
 
 .sobre .button-container {
-    flex: 1 0 16rem;
+    flex: 1 0 12rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,6 +64,8 @@
 @media screen and (width < 700px) {
     .sobre {
         background-attachment: scroll;
+        flex-flow: column nowrap;
+        gap: 0;
     }
 
     .sobre .text {
