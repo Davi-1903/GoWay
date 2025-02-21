@@ -22,6 +22,11 @@
     background-size: cover;
 }
 
+.secao-especial:nth-child(6n + 1) {
+    background: linear-gradient(to right, #000000, #00000080), url('../media/sobre/Background 3.jpg') center center no-repeat fixed;
+    background-size: cover;
+}
+
 .secao-especial .text {
     flex: 2 0 24rem;
     font-size: 16px;
