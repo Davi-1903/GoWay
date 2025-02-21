@@ -13,14 +13,36 @@ main {
     flex-direction: column;
 }
 
-
-p {
-    width: 50%;
-    text-align: justify;
-    gap: 10px;
-}
-
 .imagens {
     display: flex;
     width: 50%;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+}
+
+.imagens div{
+    display: flex;
+    width: 285px;
+    height: 285px;
+}
+
+#Brasil {
+    width: 285px;
+    height: 285px;
+    background-image: url(fotonule.jpg);
+}
+
+#Centro_Oeste {
+    width: 285px;
+    height: 285px;
+    background-image: url(regiao-centro-oeste.jpg);
+}
+
+#Nordeste {
+    width: 285px;
+    height: 285px;
+    background-image: url(regiao-nordete.jpg);
 }
