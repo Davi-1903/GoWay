@@ -7,7 +7,7 @@
 main{
     display: flex;
     flex-direction: column;
-    gap: 70px;
+    gap: 60px;
 }
 
 
@@ -17,7 +17,9 @@ main{
     background-image: url('../sobre/imagens/agencia.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 0 -60px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -33,12 +35,19 @@ main{
 #imagem > p{
     color: white;
 }
+.butons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 button {
     padding: 10px 40px;
     border-radius: 20px;
     border: 0;
     margin-right: 15px;
     color: #072D3A;
+    margin-bottom: 20px;
 }
 button:focus, button:hover{
     background-color: #072D3A;
@@ -47,12 +56,13 @@ button:focus, button:hover{
 
 
 #textsobre {
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 #textsobre > p{
-    text-align: justify;
     margin-bottom: 10px;
+    text-align: justify;
+    word-break: break-all;
 }
 #textsobre > h1{
     text-align: center;
@@ -61,13 +71,24 @@ button:focus, button:hover{
     font-size: 36px;
 }
 #textsobre > img {
-    height: 350px;
+    width: min(600px, 97%);
     float: right;
     border-radius: 6px;
     margin-left: 15px;
     margin-bottom: 4px;
+    display: flex;
     
 }
-@media screen and (max-width: 628px){
+@media screen and (max-width: 768px){
+    #imagem > h1 {
+        font-size: 35px;
+    }
     
+    #textsobre > h1{
+        font-size: 28px;
+    }
+    
+    main{
+        gap: 0;        
+    }
 }
