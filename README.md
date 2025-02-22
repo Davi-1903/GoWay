@@ -1,3 +1,7 @@
+<p align="center">
+    <img src="Davi/media/icons/Logo.svg" loading="lazy" width="400">
+</p>
+
 # GoWay
 
 Projeto de Design Web. Blog de turismo
