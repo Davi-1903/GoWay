@@ -72,6 +72,10 @@
 }
 
 @media screen and (width < 850px) {
+    .secao-especial {
+        padding: 2rem;
+    }
+
     .secao-especial:nth-child(n) { /* Pequena gambiarra */
         background-attachment: scroll;
         flex-flow: column nowrap;
