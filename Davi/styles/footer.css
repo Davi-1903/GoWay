@@ -27,7 +27,7 @@ footer .logo-container img {
 footer .logo-container p {
     font: normal 1.15rem var(--font);
     color: white;
-    text-align: left;
+    text-align: center;
 }
 
 footer .follow-containter {
