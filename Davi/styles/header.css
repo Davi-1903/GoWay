@@ -9,6 +9,7 @@
     --cor4: #F2E1C2;
     --cor5: #F27830;
     --shadow: #30304080;
+    --cor6: #05202c;
     --font: 'Montserrat', sans-serif;
 }
 
@@ -115,7 +116,7 @@ header #btn-menu-open:hover {
     background-color: #49808C30;
 }
 
-@media screen and (width < 850px) {
+@media screen and (width < 900px) {
     header > a {
         height: 30%;
     }
