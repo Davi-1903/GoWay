@@ -49,11 +49,10 @@ main form .input-label {
 main form .input-label > input {
     outline: none;
     width: 100%;
-    aspect-ratio: 20 / 3;
     background-color: #dde;
     border-radius: .5rem;
     font: 500 1em var(--font);
-    padding-inline: 1rem 15%;
+    padding: 1rem 15% 1rem 1rem;
     color: var(--cor6);
 }
 
@@ -151,7 +150,6 @@ main form button[type="submit"]:active {
     }
 
     main form .input-label > input {
-        aspect-ratio: 20 / 4;
         padding-inline-end: 20%;
     }
 
