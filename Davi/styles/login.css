@@ -39,7 +39,7 @@ main form {
 
 main form > h2 {
     font: bold 3em var(--font);
-    color: #05202c;
+    color: var(--cor6);
 }
 
 main form .input-label {
@@ -54,7 +54,7 @@ main form .input-label > input {
     border-radius: .5rem;
     font: 500 1em var(--font);
     padding-inline: 1rem 15%;
-    color: #05202c;
+    color: var(--cor6);
 }
 
 main form .input-label > input + label {
@@ -65,7 +65,7 @@ main form .input-label > input + label {
     transform: translateY(-50%);
     font: 500 1.2em var(--font);
     transition: all 250ms;
-    color: #05202c;
+    color: var(--cor6);
 }
 
 main form .input-label > input:is(:focus, :not(:placeholder-shown)) + label {
@@ -118,7 +118,7 @@ main form button[type="submit"] {
     margin-top: 1rem;
     aspect-ratio: 20 / 3;
     border-radius: .5rem;
-    background-color: #05202c;
+    background-color: var(--cor6);
     font: 500 1.2em var(--font);
     color: white;
     transition: all 250ms;
