@@ -72,11 +72,6 @@ header nav > .menu a::before {
 
 header nav > .menu a:is(:hover, .marcado) {
     color: var(--cor5);
-
-    &::before {
-        left: 0;
-        width: 50%;
-    }
 }
 
 header nav > .btn-menu-container {
