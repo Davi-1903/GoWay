@@ -14,8 +14,11 @@ main {
 }
 
 .imagens {
+    padding: 1rem;
     display: flex;
-    width: 50%;
+    flex-wrap: wrap;
+    background-color: orange;
+    gap: 1rem;
 }
 
 .conteudo {
@@ -23,26 +26,30 @@ main {
     flex-direction: column;
 }
 
-.imagens div{
+.imagens div {
     display: flex;
-    width: 285px;
-    height: 285px;
+    transition: all 250ms;
 }
 
-#Brasil {
-    width: 285px;
-    height: 285px;
-    background-image: url(fotonule.jpg);
+.imagens div img {
+    border-radius: 1rem;
 }
 
-#Centro_Oeste {
-    width: 285px;
-    height: 285px;
-    background-image: url(regiao-centro-oeste.jpg);
+.imagens2{
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-#Nordeste {
-    width: 285px;
-    height: 285px;
-    background-image: url(regiao-nordete.jpg);
+.imagens2 div {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 250px;
 }
+
+.imagens2 div img {
+    border-radius: 1rem;
+}
+
