@@ -19,58 +19,50 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 30px;
+    padding: 50px;
 }
 
 .destaques {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
+    flex: 1;
 }
 
 .destaques > div {
     display: flex;
+    flex-direction: column;
+    gap: 15px;
     justify-content: center;
     align-items: center;
     width: 285px;
     height: 285px;
+    color: white;
+    position: relative;
 }
 
-#neve {
-    background-image: url(../media/destaques/neve-destaque-285x282.jpg);
-    background-size: cover;
+.fundo > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
 }
-#natureza {
-    background-image: url(../media/destaques/natureza-destaque.jpg);
-    background-size: cover;
+
+.fundo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.6);
 }
-#montanha {
-    background-image: url(../media/destaques/Experiencias_Montanha-285x285.jpg);
-    background-size: cover;
+
+.destaques h2 {
+    z-index: 1;
 }
-#praia {
-    background-image: url(../media/destaques/Experiencias_Praia-285x285.jpg);
-    background-size: cover;
+
+.destaques > div > img {
+    z-index: 1;
 }
-#feriado {
-    background-image: url(../media/destaques/reveillon-destaque.jpg);
-    background-size: cover;
-}
-#ferias {
-    background-image: url(../media/destaques/ferias-destaque.jpg);
-    background-size: cover;
-}
-#carnaval {
-    background-image: url(../media/destaques/carnaval-destaque.jpg);
-    background-size: cover;
-}
-#viagens {
-    background-image: url(../media/destaques/viagens-esportivas-destaque-285x285.jpg);
-    background-size: cover;
-}
-#familia {
-    background-image: url(../media/destaques/familia-destaque.jpg);
-    background-size: cover;
-}
-#reveillon {
-    background-image: url(../media/destaques/reveillon-destaque.jpg);
-    background-size: cover;
+
+.destaques div:hover .fundo {
+    filter: brightness(1);
 }
