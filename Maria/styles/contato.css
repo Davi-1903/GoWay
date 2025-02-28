@@ -64,13 +64,59 @@ input, select, textarea {
     gap: 20px;
     display: flex;
     flex-direction: column;
-    height: 350px;
+    height: 370px;
 }
 
-span {
-    height: 1px;
+#endereco::before {
+    content: '';
+    background-image: url(../media/icons/location_on_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png);
+    background-size: contain;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 3px;
+    margin-right: 10px;
+}
+#horario::before {
+    content: '';
+    background-image: url(../media/icons/schedule_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png);
+    background-size: contain;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 3px;
+    margin-right: 10px;
+}
+#contato::before {
+    content: '';
+    background-image: url(../media/icons/call_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png);
+    background-size: contain;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 3px;
+    margin-right: 10px;
+}
+#email::before {
+    content: '';
+    background-image: url(../media/icons/mail_24dp_000000_FILL0_wght400_GRAD0_opsz24.png);
+    background-size: contain;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+}
+
+.row {
+    height: 2px;
     width: 100%;
-    background-color: #ffffffab;
+    margin: auto;
+    background-color: #ffffff5b;
 }
 
 [type="button"] {
