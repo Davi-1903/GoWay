@@ -9,3 +9,7 @@ const btnClose = document.querySelector('header nav #btn-menu-close');
 
 btnOpen.onclick = OpenCloseMenu;
 btnClose.onclick = OpenCloseMenu;
+
+window.onresize = function() {
+    menu.classList.remove('open');
+}
