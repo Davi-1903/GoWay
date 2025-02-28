@@ -56,8 +56,7 @@ button:focus, button:hover{
 
 
 #textsobre {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 0 10% 60px 10%;
 }
 #textsobre > p{
     margin-bottom: 10px;
