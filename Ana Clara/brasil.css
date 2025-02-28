@@ -1,43 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
-
 * {
     box-sizing: border-box;
     padding: 0;
-    border: 0;
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    border: 0;
+    font-family:  'Montserrat', sans-serif;
 }
-.conteudo {
+
+
+main {
+    height: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    position: relative;
+    padding: 50px;
+    gap: 15px;
 }
 
-.conteudo div img{
-    height: 280px;
+
+h1 {
+    text-align: center;
+}
+
+
+h1 ~ p {
+    text-align: center;
+    margin: 0;
+}
+
+
+.card > div {
+    height: 285px;
     width: 285px;
-    padding: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    border-radius: 1.5rem;
-}
-
-.conteudo div h2{
-    position: absolute;
-    left: 30px;
-    bottom: 60px;
-    color: white;
-    
-}
-
-.conteudo div p{
-    position: absolute;
-    left: 30px;
-    bottom: 45px;
-    color: white;
 }
 
 
+.card img {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
 
+
+.card > div {
+    border-radius: 1rem;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.39);
+}
+
+
+.card h2, p {
+    margin: 10px 0 0 10px;
+}
