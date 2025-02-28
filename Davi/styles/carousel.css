@@ -123,6 +123,7 @@
 
     .carousel-container > .card > .text {
         width: 80%;
+        height: 20rem;
     }
 
     .carousel-container > .card h2 {
