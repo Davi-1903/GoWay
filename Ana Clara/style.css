@@ -13,14 +13,17 @@
 main {
     display: flex;
     flex-direction: column;
+    padding-top: 70px;
 }
 
 .conteudo{
-    max-width: 1000px;
     margin: auto;
     display: flex;
+    align-items: center;
     flex-direction: column;
+    padding: 0 300px;
 }
+
 .conteudo > p{
     text-align: justify;
     padding: 10px;
@@ -34,7 +37,9 @@ main {
     padding: 1rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem;
+    width: 100%;
+    justify-content: center;
 }
 
 .imagens div {
@@ -42,11 +47,10 @@ main {
     position: relative;
 }
 
-
 .imagens div img {
     border-radius: 1rem;
-    height: 285px;
-    width: 280px;
+    height: 300px;
+    width: 400px;
 }
 
 .imagens div h2{
@@ -69,25 +73,35 @@ main {
     bottom: 2px;
 }
 
+#Brasil > div {
+    filter: brightness(0.6);
+}
+#Brasil > div:hover {
+    filter: brightness(1);
+}
+
 .imagens2{
     padding: 1rem;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    width: 100%;
     gap: 1rem;
-
+    justify-content: center;
 }
 
 .imagens2 div {
     display: flex;
-    position: relative;
+    position: relative; 
+    width: 100%;
+    height: 350px;
+    border-radius: 1rem;
 }
 
 
 .imagens2 div img {
     border-radius: 1rem;
-    width: 875px;
-    height: 280px; 
+    width: 100%;
+    height: 100%;
 }
 
 .imagens2 div p {
@@ -112,20 +126,39 @@ main {
     filter: brightness(1);
 }
 
-.imagens2 > div > div {
+#norte {
+    height: 100%;
+    width: 100%;
+    background-image: url(regiao-norte.jpg);
     filter: brightness(0.6);
+    background-size: cover;
+}
+#sudeste {
+    height: 100%;
+    width: 100%;
+    filter: brightness(0.6);
+    background-image: url(estado_sudeste2.jpg);
+    background-size: cover;
+}
+#serra {
+    height: 100%;
+    width: 100%;
+    filter: brightness(0.6);
+    background-image: url(pacote-cicloturismo.jpg);
+    background-size: cover;
 }
 
-.imagens2 div:hover > div {
+#norte:hover {
+    filter: brightness(1);
+}
+#sudeste:hover {
+    filter: brightness(1);
+}
+#serra:hover {
     filter: brightness(1);
 }
 
 @media screen and (max-width: 768px){
-    .conteudo {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
     .imagens {
         flex-direction: column;
         flex-wrap: wrap;
